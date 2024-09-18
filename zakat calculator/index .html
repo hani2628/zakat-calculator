@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zakat Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Zakat Calculator using javascript</h1>
+
+    <div class="flexcolumn zakatFormDiv"> 
+       
+        <label for="amount_goldAndSilver">Value of the gold and silver you possess?</label>
+        <input class="zakatFormInput" id="amount_goldAndSilver" step="any" type="number" onchange="calculateZakat()"/>
+        
+        <label for="amount_cashAtHome">Cash at home and in your bank account(s)?</label>
+        <input class="zakatFormInput" id="amount_cashAtHome" step="any" type="number" onchange="calculateZakat()"/>
+            
+        <label for="amount_otherSavings">Value of any other savings you have?</label>
+        <input class="zakatFormInput" id="amount_otherSavings" step="any" type="number" onchange="calculateZakat()"/>
+            
+        <label for="amount_investments">Value of any investments or shares you have?</label>
+        <input class="zakatFormInput" id="amount_investments" step="any" type="number" onchange="calculateZakat()"/>
+        
+        <label for="amount_owedToYou">How much money is owed to you?</label>
+        <input class="zakatFormInput" id="amount_owedToYou" step="any" type="number" onchange="calculateZakat()"/>
+        <label for="amount_businessAssets">Stock value of any business assets?</label>
+        <input class="zakatFormInput" id="amount_businessAssets" step="any" type="number" onchange="calculateZakat()"/>
+        
+        <label for="amount_moneyYouOwe">How much money do you owe?</label>
+        <input class="zakatFormInput" id="amount_moneyYouOwe" step="any" type="number" onchange="calculateZakat()"/>
+           
+        <label for="amount_otherOutgoingsDue">Any other outgoings due?</label>
+        <input class="zakatFormInput" id="amount_otherOutgoingsDue" step="any" type="number" onchange="calculateZakat()"/>
+    </div>
+
+    <div class="flexcolumn zakatResultsDiv">
+           
+        <label for="amount_netAssets">Net assets (amount eligble for Zakat)</label>
+        <input class="zakatFormInput" id="amount_netAssets" type="text" readonly="readonly" onchange="calculateZakat()"/>
+         
+        <label for="amount_zakatTotal">Your Zakat Total (2.5% of net assets)</label>
+        <input class="zakatFormInput" id="amount_zakatTotal" type="text" readonly="readonly"/>
+
+           
+       
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
