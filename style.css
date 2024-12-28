@@ -1,0 +1,50 @@
+body {
+    padding: 2rem;
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+
+.flexcolumn {
+    display: grid;
+    column-gap: none;
+    flex-direction: column;
+    margin-top: 1rem;
+    gap: 0.5rem;
+    align-items: left;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 40%;
+    background-color: plum;
+    box-shadow: 4px 4px 0px rgb(0,0,0,0.2);
+
+}
+
+.zakatFormInput {
+    border-radius: 5px;
+    border-width: 1;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    box-shadow: 4px 4px 0px rgb(0,0,0,0.2);
+    width: 50%;
+}
+
+label {
+    color: purple;
+}
+
+.zakatFormInput:focus {
+    outline-color: plum;
+}
+
+#calculateZakatButton {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 0px;
+    background-color: white;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: purple;
+}
